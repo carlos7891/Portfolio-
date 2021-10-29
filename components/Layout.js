@@ -2,12 +2,12 @@ import Navbar from "./Navbar"
 
 const Layout = ({children}) => {
     return (
-        <div className="Layout">
+        <>
             <Navbar />
-            <div className="Content">
-            {children}
-            </div>
-        </div>
+            <main className="container py-4">
+                {children}
+            </main>
+        </>
     )
 }
 
