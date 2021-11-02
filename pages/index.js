@@ -1,5 +1,5 @@
 import Layout from '../components/Layout'
-import {skills} from '../profile'
+import {skills, experiences, projects} from '../profile'
 
 const index = () => {
     return (
@@ -16,7 +16,7 @@ const index = () => {
                                     <h1 className="text-light pb-2">Carlos Espinosa</h1>
                                     <h3 className="text-light pb-4"> Junior Developer </h3>
                                     <p className="text-light pb-4">I'm junior developer, currently studying on Mision-Tic 2021, I'm crazy about programing in any language and learning everyday about how to improve my skills,  actually im looking to focus on one technology.</p>
-                                    <a className="text-light" href="/hireme"> Hire me </a>
+                                    <a href="/hireme"> Hire me </a>
                                 </div>
                             </div>
                         </div>
@@ -30,10 +30,10 @@ const index = () => {
                                 {
                                     skills.map(({skill, percentage}, i) => (
                                         <div className="py-3" key={i}>
-                                            <h4 className="text-light">{skill}</h4>
+                                            <h5 className="text-light">{skill}</h5>
                                             <div className="progress">
                                                 <div
-                                                    className="progress-bar" role="progress-bar"
+                                                    className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
                                                     style={{width: `${percentage}%`}}>
                                                 </div>
                                             </div>
@@ -47,16 +47,44 @@ const index = () => {
                         <div className="card bg-dark">
                             <div className="card-body">
                                 <h1 className="text-light">Experience</h1>
-                                <ul>
-                                    <li>
-                                        <h3 className="text-light">Otacc</h3>
-                                        <h5 className="text-light">2018 - 2020</h5>
-                                        <p className="text-light">Leader of the group of monitoring and control of the pipe book for more than 1,000 (2,500 isometric) production lines, in this project were executed 150,000 diametrical inches of welding, accessories were installed with a weight more than 3.500 tons, complying with the quality standards and in the established time</p>
-                                    </li>
-                                </ul>
+                                {
+                                    experiences.map(({title, description, from, to}, i) => (
+                                        <div className="py-3" key={i}>
+                                            <h3 className="text-light">{title}</h3>
+                                            <h5 className="text-light">{from}-{to}</h5>
+                                            <p className="text-light">{description}</p>
+                                        </div>
+                                    ))
+                                }
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="card card-body bg-dark">
+                            <div className="row">
+                                <div className="col-md-12 my-2">
+                                    <h1 className="text-center text-light"> Portfolio</h1>
+                                </div>
+                                {
+                                    projects.map(({name, description, image}, i) => (
+                                        <div className="col-md-4 p-2" key= {i}>
+                                            <div className="card bg-dark h-100">
+                                                <img src={`/${image}`} alt="" className="w-50% rounded" />
+                                                <div className="card-body text-light">
+                                                    <h3>{name}</h3>
+                                                    <p>{description}</p>
+                                                    <a href="#!">Know more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </Layout>
 

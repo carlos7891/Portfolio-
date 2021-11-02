@@ -36,32 +36,32 @@ export const skills = [
 
 export const experiences = [
     {
-      title: "Software developer at Microsoft",
+      title: "Project Engineer ",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint excepturi ea explicabo. Illum suscipit illo, porro quisquam voluptatem officiis fugiat vel animi aliquam inventore rem. Quo laudantium temporibus cupiditate. Aut?",
-      from: 2000,
-      to: 2005,
+        "Leader of the group of monitoring and control of the pipe book for more than 1,000 (2,500 isometric) production lines, in this project were executed 150,000 diametrical inches of welding, accessories were installed with a weight more than 3.500 tons, complying with the quality standards and in the established time",
+      from: 2018,
+      to: 2020,
     },
-    {
-      title: "Software developer at Google",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint excepturi ea explicabo. Illum suscipit illo, porro quisquam voluptatem officiis fugiat vel animi aliquam inventore rem. Quo laudantium temporibus cupiditate. Aut?",
-      from: 2005,
-      to: 2007,
-    },
-    {
-      title: "Software developer at SpaceX",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint excepturi ea explicabo. Illum suscipit illo, porro quisquam voluptatem officiis fugiat vel animi aliquam inventore rem. Quo laudantium temporibus cupiditate. Aut?",
-      from: 2010,
-    },
+
   ];
-  
   export const projects = [
     {
-      name: "Awesome Website 1",
+      name: "ProTic",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint excepturi ea explicabo. Illum suscipit illo, porro quisquam voluptatem",
-      image: "portfolio1.jpeg",
+        "Design and construction project of a software program that allows managing the sales of a product and making its corresponding follow-up, it was made with STACK MERN fronted:React js, backend: Mongodb and NodeJs, Express" ,
+      image: "Protic.png",
     },
+    {
+      name: "Calculator",
+      description:
+        "This project is a calculator base on the windows's calculator that allow to realice basic operations. it was made with python 3.9",
+      image: "CalculatorWin.png",
+    },
+    {
+      name: "Hangman Game",
+      description:
+        "This is a game based on the hangman, it is made on python 3.9",
+      image: "HangmanWin.png",
+    },
+
   ];

@@ -1,4 +1,4 @@
-import 'bootswatch/dist/lux/bootstrap.min.css'
+import 'bootswatch/dist/journal/bootstrap.min.css'
 import 'jquery/dist/jquery.min.js'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
