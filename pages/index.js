@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import {skills, experiences, projects} from '../profile'
+import Link from 'next/link'
 
 const index = () => {
     return (
@@ -14,8 +15,11 @@ const index = () => {
                                 </div>
                                 <div className="col-md-8">
                                     <h1 className="text-light pb-2">Carlos Espinosa</h1>
-                                    <h3 className="text-light pb-4"> Junior Developer </h3>
-                                    <p className="text-light pb-4">I'm junior developer, currently studying on Mision-Tic 2021, I'm crazy about programing in any language and learning everyday about how to improve my skills,  actually im looking to focus on one technology.</p>
+                                    <h3 className="text-light pb-4"> Junior Developer / Petroleum Engineer  </h3>
+                                    <p className="text-light pb-4 fs-4">I'm junior developer, currently studying on Mision-Tic 2021, I'm crazy about programing in any language and learning everyday about how to improve my skills,  actually im looking to focus on one technology.</p>
+                                    <p className="text-light pb-4 fs-4"> I love
+                                    Sports, Music, Drawing, Playing VideoGames, Football.
+                                    </p>
                                     <a href="/hireme"> Hire me </a>
                                 </div>
                             </div>
@@ -43,16 +47,29 @@ const index = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-8 h-2">
                         <div className="card bg-dark">
                             <div className="card-body">
+                                <h1 className="text-light">Biography</h1>
+                                    <div className="text-light py-2">
+                                        <span className="fw-bolder px-2">1991</span>
+                                        Born in Bucaramanga, Colombia.
+                                    </div>
+                                    <div className="text-light py-2">
+                                        <span className="fw-bolder px-2">2015</span>
+                                        Bachelor of science: Petroleum Engineer.
+                                    </div>
+                                    <div className="text-light py-2">
+                                        <span className="fw-bolder px-2">2021</span>
+                                        MisionTic 2021: Junior Developer:.
+                                    </div>
                                 <h1 className="text-light">Experience</h1>
                                 {
                                     experiences.map(({title, description, from, to}, i) => (
-                                        <div className="py-3" key={i}>
+                                        <div className="py-3 my-2" key={i}>
                                             <h3 className="text-light">{title}</h3>
-                                            <h5 className="text-light">{from}-{to}</h5>
-                                            <p className="text-light">{description}</p>
+                                            <h4 className="text-light">{from}-{to}</h4>
+                                            <p className="text-light fs-5">{description}</p>
                                         </div>
                                     ))
                                 }
@@ -74,19 +91,20 @@ const index = () => {
                                                 <div className="overflow">
                                                     <img src={`/${image}`} alt="" className="card-img-top rounded" />
                                                 </div>
-                                                <div className="card-body text-light">
-                                                    <h3>{name}</h3>
-                                                    <p>{description}</p>
-                                                    <a href={`${url}`}>Know more</a>
-                                                </div>
                                             </div>
                                         </div>
                                     ))
                                 }
+                                <div className="col-md-12 mt-4">
+                                    <div className="text-center">
+                                    <Link href="/work">
+                                        <a className="btn btn-outline-light">More Projects</a>
+                                    </Link>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </Layout>
 
