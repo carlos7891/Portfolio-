@@ -68,14 +68,16 @@ const index = () => {
                                     <h1 className="text-center text-light"> Portfolio</h1>
                                 </div>
                                 {
-                                    projects.map(({name, description, image}, i) => (
+                                    projects.map(({name, description, image, url}, i) => (
                                         <div className="col-md-4 p-2" key= {i}>
                                             <div className="card bg-dark h-100">
-                                                <img src={`/${image}`} alt="" className="w-50% rounded" />
+                                                <div className="overflow">
+                                                    <img src={`/${image}`} alt="" className="card-img-top rounded" />
+                                                </div>
                                                 <div className="card-body text-light">
                                                     <h3>{name}</h3>
                                                     <p>{description}</p>
-                                                    <a href="#!">Know more</a>
+                                                    <a href={`${url}`}>Know more</a>
                                                 </div>
                                             </div>
                                         </div>

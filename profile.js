@@ -50,18 +50,21 @@ export const experiences = [
       description:
         "Design and construction project of a software program that allows managing the sales of a product and making its corresponding follow-up, it was made with STACK MERN fronted:React js, backend: Mongodb and NodeJs, Express" ,
       image: "Protic.png",
+      url:"https://github.com/carlos7891/ProTic",
     },
     {
       name: "Calculator",
       description:
         "This project is a calculator base on the windows's calculator that allow to realice basic operations. it was made with python 3.9",
       image: "CalculatorWin.png",
+      url:"https://github.com/carlos7891/Basic-calculator-",
     },
     {
       name: "Hangman Game",
       description:
         "This is a game based on the hangman, it is made on python 3.9",
       image: "HangmanWin.png",
+      url:"https://github.com/carlos7891/Hangman",
     },
 
   ];
