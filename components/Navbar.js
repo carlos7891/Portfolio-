@@ -19,11 +19,11 @@ const Navbar = () => {
                                 <a className="nav-link" >Works</a>
                             </Link>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link  href="/post">
                                 <a className="nav-link" >Post</a>
                             </Link>
-                        </li>
+                        </li> */}
                         <li className="nav-item" >
                             <Link  href="https://github.com/carlos7891/Portfolio-">
                                 <div className="d-flex align-items-center" >
